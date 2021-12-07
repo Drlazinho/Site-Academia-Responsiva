@@ -8,20 +8,25 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    
     <!-- Fonts Family - Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Open+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Open+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>Gym</title>
   </head>
 
   <body>
 
-    <!-- Header section starts -->
+    <!-- Header section -->
     <header class="header">
       <a href="#" class="logo"> <span>Seja</span>FITNESS </a>
 
@@ -36,9 +41,50 @@
         <a href="#blogs">Blogs</a>
       </nav>
     </header>
-        <!-- Header section starts -->
+    
+    <!-- Home section -->
+    
+    <section class="home" id="home">
+      
+      <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide slide" style="background: url('./images/home-bg-1.jpg') no-repeat;">
+            <div class="content">
+              <span>Sem dor, sem ganho!</span>
+              <h3>Torne-se mais forte do que suas desculpas</h3>
+              <a href="" class="btn">vamos começar</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide" style="background: url('./images/home-bg-2.jpg') no-repeat;">
+            <div class="content">
+              <span>Sem dor, sem ganho!</span>
+              <h3>Torne-se mais forte do que suas desculpas</h3>
+              <a href="" class="btn">vamos começar</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide" style="background: url('./images/home-bg-3.jpg') no-repeat;">
+            <div class="content">
+              <span>Sem dor, sem ganho!</span>
+              <h3>Torne-se mais forte do que suas desculpas</h3>
+              <a href="" class="btn">vamos começar</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+
+    </section>
 
   </body>
-
+  
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./script.js"></script>
+
 </html>
