@@ -15,7 +15,7 @@ $red: red;
 $light-white: #aaa;
 $light-bg: #111;
 
-hmtl {
+html{
   font-size: 62.5%;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
@@ -83,7 +83,7 @@ section{
   .navbar a{
     display: inline-block;
     padding: 1.5rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     color: $white;
 
     &:hover{
@@ -115,7 +115,7 @@ section{
       width: 60rem;
 
       span{
-        font-size: 2rem;
+        font-size: 3rem;
         color: $red;
         display: block;
       }
@@ -136,6 +136,87 @@ section{
 
   &.swiper-pagination-bullet-active{
     background: $red;
+  }
+}
+
+// SECTION ABOUT
+.about{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+
+  .image{
+    flex:1 1 42rem;
+    position: relative;
+
+    &::before, 
+    &::after{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      background: $red;
+      height: 15rem;
+      width: 15rem;
+    }
+
+    &::before{
+      top:0;
+      left:0;
+    }
+
+    &::after{
+      bottom:0;
+      right:0;
+    }
+
+    img{
+      width: 100%;
+      padding: 2rem;
+    }
+  }
+
+  .content {
+    flex: 1 1 42rem;
+
+    span{
+      font-size: 3rem;
+      color: $red;
+    }
+
+    .title{
+      font-size: 4rem;
+      color: $white;
+      margin-top: .5rem;
+    }
+
+    p{
+      font-size: 1.5rem;
+      color: $white;
+      padding: 1rem 0;
+      line-height: 2;
+    }
+
+    .box-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+
+      .box{
+        flex: 1 1 20rem;
+
+        h3{
+          font-size: 2rem;
+          color: $white;
+
+          i{
+            padding-right: 1.5rem;
+            color: $red;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -202,6 +283,18 @@ section{
         display: block;
         font-size: 2rem;
       }
+    }
+  }
+
+  .about {
+    gap: 3rem;
+
+    .image{
+      margin-top: 5rem;
+    }
+
+    .content .title{
+      font-size: 3rem;
     }
   }
 }
