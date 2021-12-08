@@ -39,6 +39,34 @@ section {
   padding: 5rem 9%;
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.heading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: .1rem;
+  width: 100%;
+  background: #aaa;
+  z-index: -1;
+}
+
+.heading span {
+  font-size: 3rem;
+  color: red;
+  background-color: #000;
+  padding: .5rem 1.5rem;
+  border: 0.1rem solid #aaa;
+  border-radius: .5rem;
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -240,6 +268,71 @@ section {
   color: red;
 }
 
+.features .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+  gap: 0;
+}
+
+.features .box-container .box {
+  background-color: #111;
+}
+
+.features .box-container .box.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+}
+
+.features .box-container .box:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.features .box-container .box .image {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.features .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.features .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.features .box-container .box .content img {
+  height: 9rem;
+  margin-bottom: 1rem;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.features .box-container .box .content h3 {
+  font-size: 2rem;
+  color: red;
+}
+
+.features .box-container .box .content p {
+  line-height: 2;
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -297,6 +390,12 @@ section {
   }
   .about .content .title {
     font-size: 3rem;
+  }
+  .features .box-container .box.second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
 }
 

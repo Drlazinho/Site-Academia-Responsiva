@@ -15,6 +15,12 @@ $red: red;
 $light-white: #aaa;
 $light-bg: #111;
 
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5rem;
+}
+
 html{
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -41,6 +47,34 @@ body{
 
 section{
   padding:5rem 9%;
+}
+
+.heading{
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top:50%; 
+    left:0;
+    transform: translateY(-50%);
+    height: .1rem;
+    width: 100%;
+    background: $light-white;
+    z-index: -1;
+  }
+
+  span{
+    font-size: 3rem;
+    color: $red;
+    background-color: $black;
+    padding: .5rem 1.5rem;
+    border:.1rem solid $light-white;
+    border-radius: .5rem;
+  }
+
 }
 
 .btn{
@@ -220,6 +254,58 @@ section{
   }
 }
 
+.features .box-container{
+  @include grid(32rem);
+  gap: 0;
+
+  .box{
+    background-color: $light-bg;
+
+    &.second{
+      display: flex;
+      flex-flow: column-reverse;
+    }
+
+    &:hover .image img{
+      transform: scale(1.1);
+    }
+
+    .image{
+      height: 30rem;
+      width: 100%;
+      overflow: hidden;
+
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content{
+      padding: 2rem;
+      text-align: center;
+      
+      img{
+        height: 9rem;
+        margin-bottom: 1rem;
+        filter: invert(1); //Inverte as cores da imagem
+      }
+
+      h3{
+        font-size: 2rem;
+        color: $red;
+      }
+
+      p{
+        line-height: 2;
+        font-size: 1.5rem;
+        color: $light-white;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
 
 
 
@@ -296,6 +382,10 @@ section{
     .content .title{
       font-size: 3rem;
     }
+  }
+
+  .features .box-container .box.second{
+    flex-flow: column;
   }
 }
 
