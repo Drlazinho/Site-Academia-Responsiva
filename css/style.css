@@ -587,6 +587,64 @@ section {
   color: red;
 }
 
+.blogs .slide {
+  background: #111;
+  margin-bottom: 7rem;
+}
+
+.blogs .slide:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blogs .slide .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blogs .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogs .slide .content {
+  padding: 2rem;
+}
+
+.blogs .slide .content .link {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.blogs .slide .content .link a {
+  color: red;
+}
+
+.blogs .slide .content .link a:hover {
+  color: white;
+}
+
+.blogs .slide .content .link span {
+  color: white;
+  padding: 0 1rem;
+}
+
+.blogs .slide .content h3 {
+  font-size: 2rem;
+  color: white;
+  line-height: 1.5;
+}
+
+.blogs .slide .content p {
+  font-size: 1.5rem;
+  color: #aaa;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -655,7 +713,7 @@ section {
 
 @media (max-width: 450px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
