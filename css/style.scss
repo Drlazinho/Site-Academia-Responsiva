@@ -469,6 +469,80 @@ section{
   }
 }
 
+.review {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  .information{
+    flex: 1 1 35rem;
+
+    span{
+      font-size: 2rem;
+      color: $red;
+    }
+
+    h3{
+      font-size: 3rem;
+      color:$white;
+      padding-top: 1rem;
+    }
+
+    p{
+      font-size: 1.5rem;
+      line-height: 2;
+      color: $light-white;
+      padding: 1rem 0;
+    }
+  }
+
+  .review-slider{
+    flex: 1 1 60rem;
+    
+    .slide{
+      background: linear-gradient(130deg, $light-bg 93%, transparent 90%);
+      padding: 2rem 3rem;
+
+      p{
+        font-size: 2rem;
+        line-height: 2;
+        color: $light-white;
+      }
+
+      .user{
+        display: flex;
+        align-items: center;
+
+        img{
+          height: 5rem;
+          width: 5rem;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-right: 1rem;
+        }
+        
+        h3{
+          font-size: 2rem;
+          color: $white;
+        }
+
+        span{
+          color: $red;
+          font-size: 1.5rem;
+        }
+
+        i{
+          font-size: 5rem;
+          margin-left: auto;
+          margin-right: 2rem;
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
 
 
 

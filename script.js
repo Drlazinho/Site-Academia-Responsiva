@@ -12,7 +12,7 @@ window.onscroll = () => {
   navbar.classList.remove('active')
 }
 
-//função do efeito de swiper
+//função do efeito de swiper home
 var swiper = new Swiper('.home-slider', {
   speed: 800,  //Velocidade de transição de slide
   effect: 'fade',
@@ -28,3 +28,15 @@ var swiper = new Swiper('.home-slider', {
     clickable: true,
   }
 });
+
+//função do efeito de swiper - testimonials
+var swiper = new Swiper('.review-slider', {
+  speed: 800,  //Velocidade de transição de slide
+  grabCursor: true,
+  loop:true,
+  autoplay: { //
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+});
+
