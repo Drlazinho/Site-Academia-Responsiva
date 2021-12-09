@@ -35,7 +35,7 @@ body {
   background: #000;
 }
 
-section {
+section, footer {
   padding: 5rem 9%;
 }
 
@@ -643,6 +643,79 @@ section {
   color: #aaa;
   line-height: 2;
   padding: 1rem 0;
+}
+
+footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: white;
+  padding: 1rem 0;
+}
+
+footer .box-container .box .links {
+  font-size: 1.5rem;
+  display: block;
+  color: #aaa;
+  padding: 1rem 0;
+}
+
+footer .box-container .box .links:hover {
+  color: red;
+}
+
+footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+}
+
+footer .box-container .box p i {
+  padding: .5rem;
+  color: red;
+}
+
+footer .box-container .box .share {
+  padding: 1rem 0;
+}
+
+footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  color: white;
+  background: #111;
+  border-radius: 50%;
+  margin-right: .5rem;
+  text-align: center;
+}
+
+footer .box-container .box .share a:hover {
+  background: red;
+}
+
+footer .box-container .box form .email {
+  margin-bottom: 1rem;
+  width: 100%;
+  background: #111;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: none;
+}
+
+.credit {
+  font-size: 1rem;
+  text-align: center;
+  padding: 2rem;
+  color: white;
 }
 
 @media (max-width: 991px) {
