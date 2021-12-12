@@ -8,4 +8,7 @@ Ferramentas usadas no desenvolvimento.
 
 Site responsivo desktop/mobile.
 
+Clique aqui para ver o resultado final do site: https://gymfitbody.netlify.app/
+
 O criador original do site - Mr. Web
+
